@@ -1,4 +1,6 @@
+'use client'
 import Link from "next/link";
+import ScrollIndicator from "./scroll-indicator";
 
 const links = [
     { href: "/client", label: "client"},
@@ -26,7 +28,10 @@ function Navbar() {
                     ))}
                 </ul>
             </div>
+            <ScrollIndicator />
         </nav>
+
+        
     </>
   )
 }
